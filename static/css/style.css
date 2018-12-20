@@ -1,3 +1,32 @@
-body{
-    background-color: gray;
+body {
+    background-color: #202020;
+}
+
+.heading-font {
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body-font {
+    font-family: ibm-plex-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.project-tile{
+    width: 66vw;
+    height: 66vh;
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    background-color: #2B2B2B;
+    -webkit-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
+    box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }

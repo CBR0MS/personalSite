@@ -1,0 +1,82 @@
+body {
+    background-color: #202020;
+    color: #B9B9B9;
+    font-family: ibm-plex-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    padding-top: 10vh;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    max-width: 90vw;
+    margin-left: 2vw;
+}
+
+h2 {
+    font-family: ibm-plex-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+}
+
+h3 {
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    padding-left: 8%;
+}
+
+.highlight {
+    background-color: #535353;
+    border-radius: 5px;
+}
+
+@media (min-width: 1025px) { 
+    .hero-image {
+        object-fit: cover;
+        object-position: 0 0;
+        width: 55vw;
+        height: 100vh;
+        float: left;
+    }
+    h1 {
+        padding-top: 30vh;
+        margin-bottom: 2vh; 
+        margin-left: 63vw;
+        max-width: 25vw;
+    }
+
+    h2 {
+        margin-bottom: 55vh; 
+        margin-left: 63vw;
+    }
+    .container {
+        max-width: 50vw;
+    }
+}
+
+.container-main {
+    max-width:96vw;
+    background-color: #2B2B2B;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5vh;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+.content {
+    opacity: 0;
+}
