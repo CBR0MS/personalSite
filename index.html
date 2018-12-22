@@ -2,8 +2,16 @@
 layout: default
 title: Home
 ---
-{% for project in site.projects %}
-<script type="text/javascript">
+
+<div class="dots">
+    {% for project in site.projects %}
+        <a class="project-panel-link" href="#{{ project.filename }}">
+        </a>
+    {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    
+</div>
+<script>
     var posts = [
         {% for project in site.projects %}
             {
@@ -17,9 +25,19 @@ title: Home
     ];
     console.log(posts);
 </script>
-    <a href="{{ project.url }}">
-        <div class="project-tile">
+<div class="head hf">
+    
+</div>
+{% for project in site.projects %}
+    <a class="project-link" href="{{ project.url }}">
+        <div class="project-tile section-class-name" 
+             data-section-name="{{ project.filename }}" 
+             id="loc-{{ project.filename }}">
+            <img class="main-image" src="{{ project.image }}">
              
         </div>
     </a>
 {% endfor %}
+<div class="foot section-class-name">
+    
+</div>

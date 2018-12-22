@@ -4,6 +4,7 @@ title: Flight Time Prediction with Tensorflow
 time: Dec. 2018
 tags: [Web, Interactive, Machine Learning, UI]
 image: /static/img/flygenius.jpg
+filename: flight-time-prediction
 
 ---
 ![Main Image](/static/img/flygenius.jpg){: .hero-image .img-fluid }

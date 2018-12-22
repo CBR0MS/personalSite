@@ -15,18 +15,46 @@ body {
 }
 
 .project-tile{
-    width: 66vw;
-    height: 66vh;
-    margin-top: 16vh;
-    margin-bottom: 16vh;
-    margin-left: 16vw;
-    margin-right: 16vw;
+    width: 70vw;
+    height: 70vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 15vh;
     background-color: #2B2B2B;
     -webkit-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
     box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+.foot {
+    height: 15vh;
+    margin-top: 30vh;
+}
+.head {
+    height: 30vh;
+    margin-bottom: 15vh;
+}
+
+.main-image {
+    height: 70vh;
+    width: 30vw;
+    object-fit: cover;
+    object-position: 0 0;
+    float: left;
+}
+
+.project-panel-link {
+  height: 15px;
+  width: 15px;
+  background-color: #191919;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dots {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    width: 25px;
 }

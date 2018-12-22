@@ -7,20 +7,35 @@ body {
 }
 
 h1 {
-    padding-top: 10vh;
     font-family: ibm-plex-mono, sans-serif;
     font-weight: 400;
     font-style: italic;
-    max-width: 90vw;
-    margin-left: 2vw;
+    max-width: 300px;
 }
 
 h2 {
     font-family: ibm-plex-sans, sans-serif;
+    padding-top: 1vh;
     font-weight: 400;
     font-style: normal;
-    margin-left: 2vw;
-    margin-bottom: 10vh;
+}
+
+.body-text {
+    position: absolute;
+    top: 115vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96vw;
+    max-width: 750px;
+}
+
+.title {
+    padding: 20px;
+    background-color: #2B2B2B;
+    position: absolute;
+    left: 5vw;
+    top: 2vh;
+    opacity: 0;
 }
 
 h3 {
@@ -38,25 +53,21 @@ ul {
     border-radius: 5px;
 }
 
-@media (min-width: 1025px) { 
-    .hero-image {
-        object-fit: cover;
-        object-position: 0 0;
-        width: 55vw;
-        height: 100vh;
-        float: left;
-    }
-    h1 {
-        padding-top: 30vh;
-        margin-bottom: 2vh; 
-        margin-left: 63vw;
-        max-width: 25vw;
+.hero-image {
+    object-fit: cover;
+    object-position: 0 0;
+    width: -1vw;
+    height: 100vh;
+    float: left;
+}
+
+@media (min-width: 768px) { 
+
+    .title {
+        position: absolute;
+        left: 60vw;
     }
 
-    h2 {
-        margin-bottom: 55vh; 
-        margin-left: 63vw;
-    }
     .container {
         max-width: 50vw;
     }
@@ -72,11 +83,15 @@ ul {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 5vh;
+    height: 115vh;
+    -webkit-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
+    box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
 }
 
 ::-webkit-scrollbar { 
     display: none; 
 }
 .content {
-    opacity: 0;
+    opacity: 1;
 }
