@@ -1,6 +1,29 @@
 body {
     background-color: #202020;
+    color: #B9B9B9;
 }
+
+a {
+    color: #B9B9B9;
+}
+
+a:hover {
+    color: #B9B9B9;
+}
+
+/*h1 {
+  background: linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  color: #B9B9B9;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+h1:hover {
+  background-size: 2px 50px;
+} */
 
 .heading-font {
     font-family: ibm-plex-mono, sans-serif;
@@ -31,7 +54,7 @@ body {
     margin-top: 30vh;
 }
 .head {
-    height: 30vh;
+    height: 55vh;
     margin-bottom: 15vh;
 }
 
@@ -41,6 +64,7 @@ body {
     object-fit: cover;
     object-position: 0 0;
     float: left;
+    position: relative;
 }
 
 .project-panel-link {
@@ -57,4 +81,63 @@ body {
     transform: translateY(-50%);
     right: 2%;
     width: 25px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: ibm-plex-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    max-width: 68vw;
+    position: absolute;
+    margin-top: 15vh;
+    left: 17vw;
+    padding: 20px;
+    background-color: #2B2B2B;
+}
+
+.centered-head {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+}
+
+#head-title {
+    font-size: 4rem;
+    font-family: ibm-plex-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 2.5rem;
+    }
+    .title {
+        max-width: 365px;
+        left: 25vw;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    h1 {
+        font-size: 2.5rem;
+    }
+    .title {
+        max-width: 365px;
+        left: 48vw;
+    }
 }

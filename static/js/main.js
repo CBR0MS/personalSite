@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    // set default easing function for all animations
+    jQuery.easing.def = "easeOutCubic";
+    // init scrollify
     $(function() {
         $.scrollify({
             section : ".section-class-name",
@@ -35,8 +38,8 @@ $(document).ready(function(){
     $('.project-link').click(function(e) {
         let target = this.href;
         let margin = ""
-        console.log($(this).children().first())
-        console.log($('.project-tile').first())
+        //console.log($(this).children().first())
+        //console.log($('.project-tile').first())
         if ($(this).children().first()[0] == $('.project-tile').first()[0]){
             let height = window.innerHeight;
             let width = window.innerWidth;
@@ -59,18 +62,24 @@ $(document).ready(function(){
             // change the page when done
             window.setTimeout(function(){
                 window.location.href = target;
-            }, 100)
+            }, 50)
         });
         // animate out all other project panels
         $('.project-tile').not($(this).children()).animate({
             opacity: 0
         }, 800)
-        // animate the main image and content
+        // animate the main image 
         let image = $(this).children().first().children().first()
         $(image).animate({
             width: "-1vw",
             height: "100vh"
         }, 1500)
+        // animate the main title 
+        let title = $(this).children().first().children().last()
+        $(title).animate({
+            marginTop: '2vw',
+            opacity: 0
+        }, 1000)
         return false;
     });
 });
