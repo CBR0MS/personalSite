@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-
+<script src="/static/js/project-panel-main.js"></script>
 <div class="dots">
     {% for project in site.projects %}
         <a class="project-panel-link" href="#{{ project.filename }}">
@@ -27,7 +27,7 @@ title: Home
 </script>
 <div class="head hf">
     <div class="centered-head">
-       <h1 id="head-title">Projects</h1>
+       <h1 class="head-title">Projects</h1>
        <h2>I've worked on a range of different kinds of projects. <br> A selection have been grouped into several categories below.</h2>
     </div>
 </div>
@@ -44,6 +44,6 @@ title: Home
         </div>
     </a>
 {% endfor %}
-<div class="foot section-class-name">
-    
+<div class="foot section-class-name" data-section-name="footer">
+    <div class="foot-content"> Copyright &copy; 2019 Christian Broms &mdash; <a href="../about">Contact</a></div>
 </div>

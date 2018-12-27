@@ -1,43 +1,30 @@
 body {
     background-color: #202020;
-    color: #B9B9B9;
-}
-
-a {
-    color: #B9B9B9;
-}
-
-a:hover {
-    color: #B9B9B9;
-}
-
-/*h1 {
-  background: linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  color: #B9B9B9;
-  text-decoration: none;
-  transition: background-size .2s;
-}
-
-h1:hover {
-  background-size: 2px 50px;
-} */
-
-.heading-font {
-    font-family: ibm-plex-mono, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.body-font {
+    color: #DFDFDF;
     font-family: ibm-plex-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.project-tile{
+a {
+    color: #DFDFDF;
+}
+
+a:hover {
+    color: #DFDFDF;
+}
+
+::selection {
+  background: #F0CF00; 
+  color: #2B2B2B;
+}
+::-moz-selection {
+  background: #F0CF00; 
+  color: #2B2B2B;
+}
+
+.project-tile {
+    opacity: 0;
     width: 70vw;
     height: 70vh;
     margin-left: 15vw;
@@ -50,19 +37,21 @@ h1:hover {
 }
 
 .foot {
-    height: 15vh;
+    font-size: 12px;
+    padding: 20px;
+   /* height: 5vh;*/
     margin-top: 30vh;
 }
 .head {
-    height: 55vh;
+    height: 30vh;
     margin-bottom: 15vh;
 }
 
 .main-image {
     height: 70vh;
-    width: 30vw;
+    width: 70vw;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 50% 0;
     float: left;
     position: relative;
 }
@@ -76,6 +65,7 @@ h1:hover {
 }
 
 .dots {
+    opacity: 0;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
@@ -108,12 +98,13 @@ h2 {
 }
 
 .centered-head {
+    opacity: 0;
     position: absolute;
-    top: 15vh;
+    top: 0vh;
     left: 15vw;
 }
 
-#head-title {
+.head-title {
     font-size: 4rem;
     font-family: ibm-plex-sans, sans-serif;
     font-weight: 700;
@@ -122,6 +113,9 @@ h2 {
 }
 
 @media (min-width: 768px) { 
+    .main-image {
+        width: 50vw;
+    }
     h1 {
         font-size: 2.5rem;
     }
@@ -133,6 +127,9 @@ h2 {
 
 
 @media (min-width: 992px) { 
+    .main-image {
+        width: 30vw;
+    }
     h1 {
         font-size: 2.5rem;
     }
@@ -140,4 +137,49 @@ h2 {
         max-width: 365px;
         left: 48vw;
     }
+}
+
+.foot-content {
+    padding-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top {
+    width: 100vw;
+    height: -1vh;
+    background-color: #DFDFDF;
+}
+
+.title-front {
+    opacity: 0;
+    text-align: center;
+    mix-blend-mode: difference;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.title-dir {
+    opacity: 0;
+    text-align: center;
+    mix-blend-mode: difference;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#progress {
+    top: 15%;
+}
+
+#finished {
+    bottom: 15%;
+}
+
+::-webkit-scrollbar {
+ display: none;
 }

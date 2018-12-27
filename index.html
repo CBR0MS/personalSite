@@ -2,45 +2,12 @@
 layout: default
 title: Home
 ---
-
-<div class="dots">
-    {% for project in site.projects %}
-        <a class="project-panel-link" href="#{{ project.filename }}">
-        </a>
-    {% unless forloop.last %}{% endunless %}
-    {% endfor %}
-    
+<script src="/static/js/home-main.js"></script>
+<div class="title-front">
+    <h2>Christian Broms</h2>
+    <h1 class="head-title" style="font-size: 6rem;">Projects</h1>
+    <h2>v. 2019</h2>
 </div>
-<script>
-    var posts = [
-        {% for project in site.projects %}
-            {
-                "title": "{{ project.title }}",
-                "time": "{{ project.time }}",
-                "url": "{{ project.url }}",
-                "img": "{{ project.image }}"
-            }
-        {% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    ];
-    console.log(posts);
-</script>
-<div class="head hf">
-    
-</div>
-{% for project in site.projects %}
-    <a class="project-link" href="{{ project.url }}">
-        <div class="project-tile section-class-name" 
-             data-section-name="{{ project.filename }}" 
-             id="loc-{{ project.filename }}">
-            <img class="main-image" src="{{ project.image }}">
-             <div class="title">
-                 <h1>{{ project.title }}</h1>
-                 <h2>{{ project.time }}</h2>
-             </div>
-        </div>
-    </a>
-{% endfor %}
-<div class="foot section-class-name">
-    
-</div>
+<div id="progress" class="title-dir">&uarr; <br> In-Progress</div>
+<div id="finished" class="title-dir">Finished <br> &darr; </div>
+<div class="top"></div>

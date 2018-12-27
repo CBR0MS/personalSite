@@ -34,6 +34,18 @@ $(document).ready(function(){
         $.scrollify.move('#' + (this.href.split('#')[1]));
     });
 
+    // animate in 
+    $('.centered-head').animate({
+        opacity: 1,
+        top: '15vh'
+    }, 1500)
+    $('.project-tile').animate({
+        opacity: 1
+    }, 3500)
+    $('.dots').animate({
+        opacity: 1
+    }, 1500)
+
     // on project panel click, animate out to page change
     $('.project-link').click(function(e) {
         let target = this.href;
@@ -58,6 +70,7 @@ $(document).ready(function(){
             marginRight: "2vw",
             marginTop: margin,
             marginBottom: "2vw",
+            backgroundColor: "#FAF9F8"
         }, 1500, function(){
             // change the page when done
             window.setTimeout(function(){
@@ -78,8 +91,9 @@ $(document).ready(function(){
         let title = $(this).children().first().children().last()
         $(title).animate({
             marginTop: '2vw',
-            opacity: 0
-        }, 1000)
+            opacity: 0,
+            backgroundColor: "#FAF9F8"
+        }, 1500)
         return false;
     });
 });
